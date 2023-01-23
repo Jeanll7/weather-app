@@ -42,7 +42,7 @@ function App() {
           <p className="city">{waetherData.name}</p>
           {/* <img
             className="country"
-            src="https://countryflagsapi.com/png/br"
+            src={`https://countryflagsapi.com/png/br`}
             alt=""
           /> */}
           <p className="temp">{Math.round(waetherData.main.temp)} ºG</p>

@@ -34,14 +34,14 @@ p {
 }
 
 .weather-data {
-    margin-top: 3rem;
+    margin-top: 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .country {
-    width: 15px;
+    width: 90px;
 }
 
 .city {
@@ -77,11 +77,5 @@ p {
 @media(max-width: 650px) {
     .input {
         width: 75%;
-    }
-    .weather {
-        margin-top: 2rem;
-    }
-    .weather-data {
-        margin-top: 2.5rem;
     }
 }
