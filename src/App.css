@@ -30,6 +30,7 @@ body {
 .title,
 p {
     text-align: center;
+    letter-spacing: .4px;
 }
 
 .weather-data {
