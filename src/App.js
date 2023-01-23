@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-
 import "./App.css";
 
 function App() {
   const apiKey = "7ef853c3ea72e45701f6a3c983aa4301";
-  // const apiCountryURL = "https://countryflagsapi.com/png/";
   const [waetherData, setWaetherData] = useState([{}]);
   const [city, setCity] = useState("");
 
@@ -33,17 +31,20 @@ function App() {
         onKeyPress={getWeather}
       />
       {typeof waetherData.main === "undefined" ? (
-        <div>
-          <p>Bem-vindo! Digite o nome da cidade para obter o clima.</p>
+        <div className="title">
+          <h2>Bem-vindo! </h2>
+          <p>
+            Digite o nome da cidade <br /> para obter o clima.
+          </p>
         </div>
       ) : (
         <div className="weather-data">
           <p className="city">{waetherData.name}</p>
-          <img
+          {/* <img
             className="country"
             src="https://countryflagsapi.com/png/br"
             alt=""
-          />
+          /> */}
           <p className="temp">{Math.round(waetherData.main.temp)} ºG</p>
           <div className="weather-content">
             <p className="weather">{waetherData.weather[0].main}</p>
